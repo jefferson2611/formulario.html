@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudo-clases CSS</title>
+    <link rel=" stylesheet " href="style.css ">
+</head>
+
+<body>
+    <h1>Pseudo Código o Pseudo Clases de estados</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>1. :hover</h2>
+            <pre><code>button:hover {
+                
+    background-color: blue;
+    color: white;
+}</code></pre>
+            <button>Hover me</button>
+        </div>
+        <div class="grid-item">
+            <h2>2. :active</h2>
+            <pre><code>button:active {
+    background-color: red;
+    color: white;
+}</code></pre>
+            <button>Click me</button>
+        </div>
+        <div class="grid-item">
+            <h2>3. :focus</h2>
+            <pre><code>input:focus {
+    border: 2px solid green;
+    background-color: lightyellow;
+}</code></pre>
+            <input type="text" placeholder="Focus on me">
+        </div>
+        <div class="grid-item">
+            <h2>4. :visited</h2>
+            <pre><code>a:visited {
+    color: purple;
+}</code></pre>
+            <a href="https://example.com">Visit me</a>
+        </div>
+        <div class="grid-item">
+            <h2>5. :checked</h2>
+            <pre><code>input[type="checkbox"]:checked + label {
+    background-color: yellow;
+    padding: 5px;
+}</code></pre>
+            <input type="checkbox" id="check" checked>
+            <label for="check">Checked</label>
+        </div>
+        <div class="grid-item">
+            <h2>6. :disabled</h2>
+            <pre><code>button:disabled {
+    background-color: gray;
+    color: white;
+}</code></pre>
+            <button disabled>Disabled</button>
+        </div>
+        <div class="grid-item">
+            <h2>7. :enabled</h2>
+            <pre><code>button:enabled {
+    background-color: green;
+    color: white;
+}</code></pre>
+            <button>Enabled</button>
+        </div>
+        <div class="grid-item">
+            <h2>8. :invalid</h2>
+            <pre><code>input:invalid {
+    border: 2px solid red;
+}</code></pre>
+            <input type="email" placeholder="Enter email">
+        </div>
+        <div class="grid-item">
+            <h2>9. :default</h2>
+            <pre><code>input[type="radio"]:default {
+    border: 2px solid blue;
+}</code></pre>
+            <input type="radio" name="option" checked> Default
+            <input type="radio" name="option"> Option
+        </div>
+        <div class="grid-item">
+            <h2>10. :empty</h2>
+            <pre><code>div:empty {
+    display: none;
+}</code></pre>
+            <div class="empty"></div>
+        </div>
+    </div>
+
+    <h1>Pseudo Clases estructurales</h1>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>1. :nth-child(odd)</h2>
+            <pre><code>.grid-item ul li:nth-child(odd) {
+    background-color: lightblue;
+}</code></pre>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>2. :nth-child(even)</h2>
+            <pre><code>.grid-item ul li:nth-child(even) {
+    background-color: lightgreen;
+}</code></pre>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>3. :first-child</h2>
+            <pre><code>.grid-item ul li:first-child {
+    font-weight: bold;
+}</code></pre>
+            <ul>
+                <li>Primer elemento</li>
+                <li>Otro elemento</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>4. :last-child</h2>
+            <pre><code>.grid-item ul li:last-child {
+    font-style: italic;
+}</code></pre>
+            <ul>
+                <li>Otro elemento</li>
+                <li>Último elemento</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>5. :nth-child(n)</h2>
+            <pre><code>.grid-item ul li:nth-child(3) {
+    color: red;
+}</code></pre>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>6. :nth-of-type(n)</h2>
+            <pre><code>.grid-item ul li:nth-of-type(2) {
+    text-decoration: underline;
+}</code></pre>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <h2>7. :nth-last-child(n)</h2>
+            <pre><code>.grid-item ul li:nth-last-child(2) {
+    background-color: lightcoral;
+}</code></pre>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <div>
+            <a href="formulario.html" target="_blank">
+                <button class="formulario">Formulario</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

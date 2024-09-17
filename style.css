@@ -1,0 +1,163 @@
+button:hover {
+    background-color: rgb(240, 17, 17);
+    color: white;
+}
+
+button:active {
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+
+input:focus {
+    border: 2px solid green;
+    background-color: rgb(168, 168, 5);
+}
+
+a:visited {
+    color: purple;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: yellow;
+    padding: 5px;
+}
+
+button:disabled {
+    background-color: rgb(206, 9, 9);
+    color: white;
+}
+
+button:enabled {
+    background-color: rgb(4, 15, 114);
+    color: white;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input[type="radio"]:default {
+    border: 2px solid rgb(0, 255, 34);
+}
+
+div:empty {
+    display: none;
+}
+
+
+/* Estilos para la grilla */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 elementos por fila */
+    gap: 10px;
+    overflow: hidden;
+    /* Evitar desbordamiento horizontal */
+}
+
+.grid-item {
+    border: 5px solid rgb(212, 5, 5);
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    /* Ajustar palabras largas */
+    max-width: 100%;
+    /* Asegurarse de que el contenido no se salga del borde */
+    word-wrap: break-word;
+}
+
+
+/* Estilos para pseudo-clases estructurales */
+
+.grid-item ul li:nth-child(odd) {
+    background-color: white;
+    color: #000;
+    font-size: 14px;
+}
+
+.grid-item ul li:nth-child(even) {
+    background-color: white
+}
+
+.grid-item ul li:first-child {
+    font-weight: bold;
+}
+
+.grid-item ul li:last-child {
+    font-style: italic;
+    color: darkblue
+}
+
+.grid-item ul li:nth-child(3) {
+    color: yellow;
+}
+
+.grid-item ul li:nth-of-type(2) {
+    text-decoration: underline;
+    background-color: rgb(221, 190, 13);
+}
+
+.grid-item ul li:nth-last-child(2) {
+    background-color: rgb(9, 18, 141);
+    color: #000;
+}
+
+.grid-item ul li:nth-last-of-type(1) {
+    background-color: rgb(206, 13, 13);
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #3498db;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #3498db;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.formulario {
+    background-color: #f02e0c;
+    border: none;
+    color: rgb(247, 239, 239);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 100px;
+    cursor: pointer;
+    border-radius: 60px;
+    transition: width 0.5s ease 0, 2s;
+}
+
+.formulario:hover {
+    background-color: rgb(226, 18, 29);
+    color: black;
+    border: 2px solid #0a0a0a;
+    width: 200px;
+}
