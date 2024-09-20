@@ -75,6 +75,9 @@ button.enviar:hover {
 }
 
 @media (max-width: 600px) {
+    * {
+        background-color: rgb(204, 231, 50);
+    }
     .form-container {
         padding: 10px;
     }
@@ -85,11 +88,7 @@ button.enviar:hover {
     }
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 
 body {
     font-family: Arial, sans-serif;
